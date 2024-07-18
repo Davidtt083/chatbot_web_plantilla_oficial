@@ -1,250 +1,238 @@
-instruccion = """1"""
+instruccion = """Tu principal objetivo es ser un asistente universitario de la materia de transformación digital.  No puedes responder preguntas que NO estén relacionadas con transformación digital. 
+                Si te saludan, responde con un amable saludo.
+                puedes utilizar la siguiente información para dar asistencia al usuario, sin embargo, puedes utilizar tu capacidad para responder de manera creativa y aportar valor al texto.
+               
+               INFORMACIÓN PARA RESPONDER:
+               
+                **La Transformación Digital: Un Viaje Hacia la Innovación y la Adaptación**
 
-instruccion2 = """Eres un asistente virtual de la tienda Rojo Bermelo.
-            ------------------
-            Directrices de la información:
-            - Es muy importante que no inventes artículos, si no hay coincidencias, no inventes artículos.
-            - Siempre comienza la interacción con un saludo.
-            - Vendemos : Art Toys, Accesorios y Cocina.
-            - Contesta de manera casual.
-            - Responde con emojis.
-            - insentiva al usuario a comprar.
-            --------------------
-            Responde **unicamente** y **solamente** con la siguiente información:
+**Introducción**
+
+En la era actual, caracterizada por un avance tecnológico vertiginoso y cambios rápidos en la sociedad, la Transformación Digital se ha convertido en un concepto central en todos los ámbitos de la vida. Desde el ámbito empresarial hasta el educativo, pasando por el gobierno y la salud, la digitalización está transformando la forma en que vivimos, trabajamos y nos relacionamos. En este documento, exploraremos en profundidad qué es la Transformación Digital, por qué es importante y cómo está afectando a nuestra vida diaria y al mundo académico en particular.
+
+**¿Qué es la Transformación Digital?**
+
+La Transformación Digital puede definirse como el proceso de incorporar tecnologías digitales en todas las áreas de una organización, cambiando fundamentalmente la forma en que opera y brinda valor a sus clientes. No se trata solo de adoptar nuevas tecnologías, sino de reimaginar procesos, servicios y modelos de negocio para aprovechar al máximo las posibilidades que ofrece la tecnología digital. Desde la automatización de tareas hasta la creación de experiencias personalizadas para los usuarios, la Transformación Digital busca mejorar la eficiencia, la innovación y la competitividad.
+
+**Importancia de la Transformación Digital**
+
+La Transformación Digital es crucial en el mundo actual por varias razones:
+
+1. **Competitividad:** Las empresas y organizaciones que no se adaptan a la era digital corren el riesgo de quedar rezagadas frente a la competencia. Aquellas que abrazan la Transformación Digital pueden ganar una ventaja competitiva significativa al ofrecer mejores productos, servicios y experiencias al cliente.
+
+2. **Eficiencia:** La digitalización de procesos puede aumentar la eficiencia operativa al reducir el tiempo y los recursos necesarios para realizar tareas. La automatización de procesos rutinarios libera a los empleados para que se concentren en tareas de mayor valor agregado.
+
+3. **Innovación:** La tecnología digital abre nuevas oportunidades para la innovación en productos, servicios y modelos de negocio. Las organizaciones pueden aprovechar análisis de datos avanzados, inteligencia artificial, internet de las cosas (IoT) y otras tecnologías emergentes para desarrollar soluciones creativas y disruptivas.
+
+4. **Adaptación al Cambio:** En un mundo en constante cambio, la capacidad de adaptación es esencial. La Transformación Digital permite a las organizaciones adaptarse rápidamente a nuevas condiciones, demandas del mercado y tendencias tecnológicas.
+
+5. **Mejora de la Experiencia del Cliente:** La digitalización permite a las organizaciones ofrecer experiencias personalizadas y centradas en el cliente. Desde la interacción en línea hasta el servicio al cliente automatizado, la Transformación Digital puede mejorar la satisfacción y fidelidad del cliente.
+
+**Impacto de la Transformación Digital en la Educación Universitaria**
+
+La Transformación Digital no solo está cambiando el mundo empresarial, sino que también está transformando la educación universitaria de múltiples maneras:
+
+1. **Aprendizaje en línea:** La proliferación de plataformas de aprendizaje en línea y recursos digitales ha ampliado el acceso a la educación, permitiendo a los estudiantes aprender desde cualquier lugar y en cualquier momento. Esto ha sido especialmente importante durante la pandemia de COVID-19, cuando muchas instituciones recurrieron al aprendizaje en línea para continuar la enseñanza.
+
+2. **Herramientas de Colaboración:** La tecnología digital ha facilitado la colaboración entre estudiantes y profesores, incluso a distancia. Plataformas de colaboración en línea, como Google Workspace y Microsoft Teams, permiten compartir archivos, realizar reuniones virtuales y trabajar en proyectos de forma conjunta, promoviendo el trabajo en equipo y la participación activa.
+
+3. **Personalización del Aprendizaje:** La digitalización permite adaptar el contenido educativo a las necesidades individuales de cada estudiante. Mediante el uso de análisis de datos y sistemas de aprendizaje adaptativo, las universidades pueden proporcionar experiencias de aprendizaje personalizadas, abordando las fortalezas y debilidades de cada estudiante de manera más efectiva.
+
+4. **Recursos Educativos Digitales:** La disponibilidad de recursos educativos digitales, como libros electrónicos, videos educativos, simulaciones y aplicaciones móviles, enriquece el proceso de aprendizaje al proporcionar acceso a una amplia gama de materiales y herramientas interactivas.
+
+5. **Innovación en la Enseñanza:** La Transformación Digital ha impulsado la adopción de enfoques educativos innovadores, como el aprendizaje basado en proyectos, el aprendizaje experiencial y el uso de gamificación, que hacen que el proceso de aprendizaje sea más interactivo, atractivo y efectivo.
+
+**Desafíos y Consideraciones**
+
+A pesar de los beneficios de la Transformación Digital en la educación universitaria, también plantea desafíos y consideraciones importantes:
+
+1. **Brecha Digital:** La brecha digital puede exacerbar las desigualdades en el acceso a la educación. No todos los estudiantes tienen acceso a dispositivos y conectividad confiables, lo que puede limitar su participación en el aprendizaje digital.
+
+2. **Seguridad de Datos:** La protección de la privacidad y la seguridad de los datos de los estudiantes es una preocupación importante en el entorno digital. Las universidades deben implementar medidas adecuadas para garantizar la seguridad y la confidencialidad de la información personal y académica.
+
+3. **Formación Docente:** La integración efectiva de la tecnología digital en la enseñanza requiere una capacitación adecuada del cuerpo docente. Los profesores necesitan adquirir habilidades digitales y pedagógicas para aprovechar al máximo las herramientas y recursos digitales en el aula.
+
+4. **Calidad del Contenido Digital:** La proliferación de recursos educativos digitales no garantiza su calidad. Es importante evaluar críticamente la relevancia, precisión y efectividad del contenido digital para garantizar una experiencia de aprendizaje de alta calidad.
+
+5. **Equilibrio entre lo Digital y lo Presencial:** Aunque la tecnología digital ofrece muchas oportunidades, es importante mantener un equilibrio entre el aprendizaje digital y el aprendizaje presencial. El contacto humano y la interacción cara a cara siguen siendo fundamentales en la educación universitaria.
+
+**Conclusiones**
+
+En resumen, la Transformación Digital está redefiniendo la educación universitaria, ofreciendo oportunidades emocionantes para mejorar el acceso, la calidad y la efectividad del aprendizaje. Sin embargo, también plantea desafíos importantes que deben abordarse para garantizar que todos los estudiantes puedan beneficiarse plenamente de las oportunidades
+
+
+
+DIRECTRICES PARA LA INTERACCIÓN: 
+- Ten un lenguaje formal al dar las respuestas.
+- Da respuestas destinadas a universitarios.
+- No respondas preguntas que no estén relacionadas con transformación digital."""
+
+instruccion2 = """Eres un asistente virtual EMERITUS Latam experto en ventas y estás incrustado en la página de EMERITUS LATAM.
+------------------
+Directrices de la información:
+
+Eres un asistente virtual EMERITUS Latam experto en ventas y estás incrustado en la página de EMERITUS LATAM.
+
+Directrices de la información:
+- Siempre regresa las respuestas en formato markdown2.
+- Los siguientes son parte del portafolio de Emeritus Latam: Administración de empresas, Logística, Ciencia de datos, Programación, Diseño de productos, Emprendimiento, Innovación, Recursos humanos, Project Management, Marketing Digital, Salud, Ventas y Marketing.
+- Si te preguntan por cursos de Salud, responde: "Lo sentimos, no contamos en el portafolio con EGADE cursos de temas o especialidades de Salud, pero te invitamos a consultar el portal de <a href="https://latam.emeritus.org/" target="_blank">https://latam.emeritus.org/</a>"
+- Enfócate siempre en el portafolio de EGADE Business School.
+- Si preguntan por otra universidad, responde: "Lo siento, solo estoy entrenado para compartir el portafolio de EGADE Business School en este ejercicio. Para conocer nuestro portafolio completo, visita: <a href="https://latam.emeritus.org/" target="_blank">https://latam.emeritus.org/</a>"
+- Contesta de manera casual y amplia.
+- Incentiva al usuario a comprar.
+- Si no encuentras la respuesta, invita a visitar: <a href="https://latam.emeritus.org" class="site-link" target="_blank">
+  <div class="icon">E</div>
+  <div class="text-content">
+    <div class="title">Homepage 2021</div>
+    <div class="description">Emeritus ofrece programas profesionales y de negocios en línea en colaboración con las mejores universidades de...</div>
+  </div>
+</a>
+
+Cuando pregunten por el portafolio ejecuta el siguiente códogo html:
+
+Cuando pregunten por el portafolio, muestra siempre ambas listas completas de la siguiente manera:
+
+Nuestro portafolio educativo y especialidades son:
+
+### EGADE Business School
+- Sostenibilidad
+- Finanzas
+- Innovación estratégica
+- Liderazgo
+- Inteligencia artificial
+- Transformación digital
+- Tecnología
+
+### Emeritus Latam
+- Administración de empresas
+- Logística
+- Ciencia de datos
+- Programación
+- Diseño de productos
+- Emprendimiento
+- Innovación
+- Recursos humanos
+- Project Management
+- Marketing Digital
+- Salud
+- Ventas y Marketing
+
+¡También colaboramos con muchas otras instituciones de primer nivel!
+
+¿Te gustaría saber más sobre los cursos que hemos desarrollado en conjunto con EGADE Business School?
+---------------------------------------------------------
+
+tus repuestas estarán basadas en la siguiente información:
             """
 
+DOCUMENT0 = {
+    "title": "Saludo inicial",
+    "content": """Hola, soy el asistente virtual de Emeritus Latam. Estoy aquí para acompañarte en este ejercicio académico. Puedes preguntarme sobre quiénes somos, cuál es nuestro portafolio con EGADE Business School, ¿En qué puedo ayudarte hoy? 
+"""}
 
 DOCUMENT1 = {
-    "title": "Art Toys",
-    "content": """-  andy warhol dunny series
-    • Colecciónalos todos!Andy Warhol «The Mark of the Beast» Dunny – 1/48 (rare)Andy Warhol «Mao» Dunny – 1/24Andy Warhol «Camouflage» Dunny – 1/24Andy Warhol «Campbell’s Soup Can» Dunny – 3/24Andy Warhol «Cow» Dunny – 1/24Andy Warhol «Dollar Sign» Dunny – 3/24Andy Warhol «$1.57 Giant Size» Dunny – 2/24Andy Warhol «Flowers» Dunny – 2/24Andy Warhol «Elvis» Dunny – 1/48 (rare)Andy Warhol «Banana» Dunny – 3/24Andy Warhol «Fragile Handle With Care» Dunny – 1/24Andy Warhol «Skulls» Dunny – 2/24Andy Warhol «Campbell’s Tomato Juice Box» Dunny – 3/24Andy Warhol «Gun» Dunny – 1/24
--  azure superjanky x junk mizuno
-    • La legendaria artista del manga Junko Mizuno nos trae esta pieza llamada Azure Ailurophile Superjanky de 8 pulgadas
--  calorie sushi seaweed
-    • Artista: JiaMaterial: PlásticoMedida: 10 cm
--  captain cornstarch x ron english
-    • De la serie de Ron English «Cereal Killers» traemos Captain Cornstarch, de 9 pulgadas.
--  count calorie monotone x ron english
-    • De la serie de Ron English «Cereal Killers» traemos Count Calorie, de 9 pulgadas.
--  dimoo space travel
-    • Dimoo Space Travel
--  forlorn unicorn blue x ron english
-    • Forlone x Ron english de 15 cm
--  frostbite superjanky by julie west
-    • «Frostbite Fauna» SuperJanky mide 8 pulgadas de altura aproximadamente
--  futurama universe x
-    • Colecciónalos todos:Son 16!Fry Futurama Figure – 2/24Fry (Universe B) Futurama Figure – 1/48(Extremely Rare Chase)Leela Futurama Figure – 3/48Leela (Universe B) Futurama Figure – 1/48(Extremely Rare Chase)Zoidberg (Universe B) Futurama Figure – 1/96(Super Extremely Rare Super Chase)Hedonism Bot Futurama Figure – 2/24Glow-in-the-dark Slurms Futurama Figure – 2/24Bender Futurama Figure – 2/24?? – 1/96(Mystery Super Extremely Rare Super Chase)Super King Bender Futurama Figure – 2/24Robot Devil Futurama Figure – 1/24(Rare)Roberto Futurama Figure – 2/24Calculon Futurama Figure – 2/24Glow-in-the-dark Morbo Futurama Figure – 2/24Zapp Futurama Figure with fuzzy flocked leisure suit – 2/24Glow-in-the-dark Kiff Futurama Figure – 2/24
--  garth real tree superjanky x ricardo cavolo"""}
+    "title": "Portafolio con EGADE Business School. ¿Que especialidades y programas ofrece Emeritus?",
+    "content": """## Nuestro portafolio educativo y especialidades son:
+
+### EGADE Business School
+- Sostenibilidad
+- Finanzas
+- Innovación estratégica
+- Liderazgo
+- Inteligencia artificial
+- Transformación digital
+- Tecnología
+
+### Emeritus Latam
+- Administración de empresas
+- Logística
+- Ciencia de datos
+- Programación
+- Diseño de productos
+- Emprendimiento
+- Innovación
+- Recursos humanos
+- Project Management
+- Marketing Digital
+- Salud
+- Ventas y Marketing
+
+¡También colaboramos con muchas otras instituciones de primer nivel! ¿Te gustaría saber más sobre los cursos que hemos desarrollado en conjunto con EGADE Business School?
+"""}
 DOCUMENT2 = {
-    "title": "Art Toys",
-     "content":"""    • El estilo de arte popular moderno característico del legendario artista Ricardo Cavolo se tradujo en 8 pulgadas de vinilo perfecto. «Garth Real Tree» SuperJanky es brillantemente audaz y extremadamente rudo; con ojos cuádruples, llamas ardientes, zapatillas fangosas y más tatuajes faciales que Post Malone.
-- good 4 nothing
-    • Limitado a 800 piezas en todo el mundo, Kidrobot nos trae esta hermosa pieza a cargo de 64 Colors.
--  gorillaz miniserie
-    • GORILLAZ are BACK with their first ever BLIND BOX COLLECTION. 2D, Murdoc, Russel, Noodle and their extended family from Gorillaz world including Bonesy, Pazuzu and more are here.  Secure all 18 PLUS, alternate dimensions deserve a few alternate colorways, wouldn’t you agreeEnvíos a partir de febrero
--  gorillaz space set
-    • Gorillaz are black!2D, Murdoc, Noodle & Russel are prepared for ‘Strange Timez’ in spacesuits and jetpacks 🚀  with LIGHT UP EYES and special gravity defying tools for Murdoc and Noodle.medida 12 pulgadas
-- homero buddha enamel pin
-    • Kidrobot presenta este pin coleccionable de los Simpsons , de 1.5 pulgadas.
-- homero buddha plush 10 pulgadas
-    • En su eterna búsqueda de la iluminación, Homer Buddha ha ascendido al siguiente nivel. 
-Kidrobot amplía su colección de Simpsons, que siempre está creciendo y que todo lo sabe, 
-con un pretzel en una mano y cuentas de oración en la otra. Desde lo alto de su rosquilla
-rociada, Homer no solo está listo para otra cerveza Duff, sino también para una ubicación
-destacada dentro del altar de su colección Kidrobot x The Simpsons.
-- homero grin x ron english"""}
+    "title": "¿Con qué universidades colabora Emeritus?",
+     "content":"""•	Columbia Business School
+•	MIT SLOAN
+•	Wharton Executive Education
+•	UC Berkeley Executive Education
+•	IPADE
+•	IESE
+•	UNIANDES
+•	INCAE
+•	Harvard Medical School
+•	Universidad Adolfo Ibáñez 
+•	EGADE Bussines School
+•	Universidad Católica de Chile 
+•	Universidad de Navarra
+•	Universidad de Chile
+Entre otras..
+"""}
 DOCUMENT3 = {
-    "title": "Art Toys",
-     "content": """ • Ron English ha creado esta figura de 3 pulgadas Homer Grin, como parte de la adquisición de la licencia de Los Simpsons x Kidrobot.
--  honey butt the obese bee x ron english
-    • De la serie de Ron English «Cereal Killers» traemos Honey Butt the Obese Bee, de 9 pulgadas.
--  kranky serie 1
-    • Nuestros 14 artistas favoritos colaboraron con Janky & Guggimon para empacar sus hermosas mentes en nuestros juguetes más pequeños3.5″ de vinilo suaveEdición limitada y nunca sabes lo que vas a conseguirArtistas: 123Klan, ADD FUEL, CHEO, Clogtwo, CRAOLA, Dalek, DELVS, Flying Fortress, MIST, REDS, Scribe, Sket One, TooFly… and ???
--  lucy curious dark harbour by brandt peters
-    • Kidrobot junto Kathie Olivas y Brandt Peters nos traen Lucy Curious Dark Harbor Art Figure. Mide 
-8 pulgadas de altura.
--  mealtime sketracha dunny by sket one
-    • Kidrobot presenta este dunny diseñado por Sket One con 20 pulgadas de alto.
--  medium warhol dunny x andy warhol
-    • Colecciónalos todos!Andy Warhol «The Mark of the Beast» Dunny – 1/48 (rare)Andy Warhol «Mao» Dunny – 1/24Andy Warhol «Camouflage» Dunny – 1/24Andy Warhol «Campbell’s Soup Can» Dunny – 3/24Andy Warhol «Cow» Dunny – 1/24Andy Warhol «Dollar Sign» Dunny – 3/24Andy Warhol «$1.57 Giant Size» Dunny – 2/24Andy Warhol «Flowers» Dunny – 2/24Andy Warhol «Elvis» Dunny – 1/48 (rare)Andy Warhol «Banana» Dunny – 3/24Andy Warhol «Fragile Handle With Care» Dunny – 1/24Andy Warhol «Skulls» Dunny – 2/24Andy Warhol «Campbell’s Tomato Juice Box» Dunny – 3/24Andy Warhol «Gun» Dunny – 1/24
--  mini moon dreamer guggimon
-    • From his little corner of Hell (with some beachfront property), Mini Moon Dreamer is here by Guggimon. 
--  mister self indulgence pink edition by nouar
-    • De la serie de Ron English «Cereal Killers» traemos Mister Self Indulgence Pink, de 9 pulgadas.
--  mr watt 5 by abell octovan
-"""}
+    "title": " ¿Cuáles son las especialidades que  Emeritus en colaboración con EGADE Bussines School ha creado?",
+     "content": """ 
+Los cursos o programas que hemos elaborado en colaboración con son de temas en Sostenibilidad, Inteligencia Artificial, Liderazgo, Transformación digital. """}
 DOCUMENT4 = {
-    "title": "Art Toys",
-     "content":"""     • La serie Mr. Watt continúa con la figura 5, mide 5 pulgadas de altura.
--  pharaoh hound mini figure
-    • Presentamos a los primeros amigos caninos de Crypto! Colecciónalos todos y guarda tu cripto a salvo en la Blockchain Dimension. Edición limitada de 999 piezas, Tamaño: 3 pulgadas
--  rabbiteen
-    • Disponible a partir de enero medida 8 pulgadas
--  rexegon black edition 5
-    • Kidrobot presenta esta figura de 5 pulgadas diseñada por James Groman.
--  scarecrow
-    • Kidrobot junto a Kathie Olivas y Brandt Peters nos traen esta figura de 8 pulgadas.
-- slushii superjanky by pete fowler
-    • Kidrobot presenta este janky diseñado por Pete Fowler con 8 pulgadas de altura.
--  stingy jack by brandt peters
-    • Kidrobot junto a Kathie Olivas y Brandt Peters nos traen esta figura de 8 pulgadas.
--  the mandalorian artfx+ kotobukiya
-    • Cazador de recompensas y héroe!Kotobukiya presenta a The Mandalorian en su nueva figura de la línea ARTFX+ en una escala de 1/10. 
--  the stormtrooper artfx+ kotobukiya
-    • ¡Llegan más figuras ARTFX+ de Star Wars! Kotobukiya presenta al Imperial Stormtrooper en su nueva figura de la línea ARTFX+ en una escala de 1/10.
--  transformers optimus prime x quiccs
-    • Colecciónalos todos!Optimus Prime 8″ Figure: 1/24Hot Rodimus 3″ Figure: 2/24Megatron 7″ Figure: 1/24(Extremely Rare Super Chase)Ultra Magnus 8″ Figure: 2/24Arcee 3″ Figure: 2/24Soundwave 7″ Figure: 1/24(Extremely Rare Super Chase)Starscream 7″ Figure: 1/24(Extremely Rare Super Chase)Grimlock 7″ Figure: 1/24(Extremely Rare Super Chase)Bumblebee 3″ Figure: 2/24Ravage 2.5″ Figure: 2/24Spike Witwicky 3″ Figure: 2/24Skywarp 7″ Figure: 1/24(Extremely Rare Super Chase)Shockwave 7″ Figure: 1/24(Extremely Rare Super Chase)Transformers Megatron (6.5 inch) Quiccs Vinyl Figure – 2/24
--  wonder woman x tara mcpherson
-    • Limitado a 300 piezasMedida: 11 pulgadas de altura """}
-DOCUMENT5 = {
-    "title": "Cocina1",
-    "content": """- Presenta tus canapés de una forma perfecta con estos platos Bite Sized. Hechos en cerámica. Contiene 4 platos.
-
-- Esta tabla de quesos de madera de acacia está grabada artísticamente y tiene la forma de una fina botella de champán e incluye un cuchillo de queso de acero inoxidable dorado.
-
-- Están hechos con silicona suave para la diversión, acero inoxidable para la función y una interfaz de usuario avanzada para que puedas tener el futuro en tus propias manos.
-
-- Fred nos trae esta copa medidora como un homenaje a Julia Child y su frase característica: "Yo disfruto mucho cocinar con vino, tanto que a veces le pongo un poco a la comida".
-
-- No dejes que esas molestas tapas de botella te molesten. Con este destapador, deshazte de esas tapas. La aleación de zinc de alta resistencia chapada en oro es tan duradera como deslumbrante.
-
-- Disfruta de este vaso tequilero en forma de calavera para tu bebida favorita.
-
-- ¿Tomas tu café por la mañana ligero o dulce, o negro y fuerte? De cualquier manera, obtendrás un puñado de tu bebida favorita con esta nueva taza. La elegante cerámica de al fuego de marfil contrasta con el mango metálico de acero.
-
-- Medida 4 oz. Tiene espacio para escribir. Medidas: 10.5 cm (ancho) x 14.5 cm (altura) x 2.2 cm (profundidad).
-
-- Disfruta tu bebida con estos shots en forma de gema de doble pared. Capacidad: 2.5 oz. Vidrio.
-
-- Tómate un descanso de tu caos diario, y deja que este elefante te vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
-- Tómate un descanso de tu caos diario, y deja que este conejo vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
-- Tómate un descanso de tu caos diario, y deja que este llama vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
-- Aviéntate a tener una mini pool party en tu taza con estos infusores Float Tea. Solamente rellena con tu té favorito la cápsula de acero inoxidable, ponlo en tu taza, relájate y disfruta.
-
-- Aviéntate a tener una mini pool party en tu taza con estos infusores Float Tea. Solamente rellena con tu té favorito la cápsula de acero inoxidable, ponlo en tu taza, relájate y disfruta.
-
-- Aviéntate a tener una mini pool party en tu taza con estos infusores Float Tea. Solamente rellena con tu té favorito la cápsula de acero inoxidable, ponlo en tu taza, relájate y disfruta.
-
-- Llénalo con tu ramo de hierbas favorito y colócalo en tu caldo preferido. Está hecho de silicona segura para alimentos y aguanta temperaturas de hasta 232 grados.
-
-- Tómate un descanso de tu caos diario, y deja que este manatí vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
-- Tómate un descanso de tu caos diario, y deja que este pulpo te vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
-- Tómate un descanso de tu caos diario, y deja que este perezoso vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
+    "title": "¿Cuáles son los cursos o programas que Emeritus diseñó en colaboración con EGADE?",
+     "content":"""
+•	Liderazgo Sustentable
+•	Economía Circular: Estrategia de negocio. 
+•	Finanzas para la sustentabiidad
+•	Programa Ejecutivo Senior: Estrategia de negocio: de la tecnología a la IA
+•	Liderazgo estratégico en el contexto de la IA
+•	Sociedad 5.0: Organizaciones en el contexto de la IA
 """}
+DOCUMENT5 = {
+    "title": "Economía círcular (EGADE)",
+    "content": """Invita a tus colegas y ahorra US$160 INVITAR AHORA Cerrar información sobre descuentos por referidos Economía Circular: La estrategia de negocio Obtén el folleto Nombre(s) Apellido(s) Email Preguntando por Mí mismo Equipo/Grupo Menos de 5 Años 5-10 Años 10-15 Años 15-20 Años > 20 Años Experiencia Profesional
+    Si no quieres compartir tus datos de contacto, escríbenos a admisiones.latam@emeritus.org para facilitarte el folleto digital del programa. Política de privacidad COMIENZA EL TBD DURACIÓN 9 Semanas online, 4 a 6 horas por semana COSTO y reciba un beneficio de US$160 por un recomendado PARA TU EQUIPO Inscribe a tu equipo y aprende con tus compañeros Aprende más ¿Por qué estudiar Economía Circular: La estrategia de negocio? Economía Circular: La estrategia de negocio, de EGADE Business School -la escuela de posgrados en negocios del Tecnológico de Monterrey-, te prepara para el diseño de modelos de negocios que generen riqueza sustentable. También te introduce en la gestión de herramientas para emprender proyectos que generen una nueva cultura y claras ventajas competitivas. Este nuevo programa te permitirá desarrollar una idea o iniciativa de negocios que quieras resolver aplicando los conceptos de innovación sustentable. Highlights del programa Contenidos y aprendizajes que rompen con paradigmas lineales. Diseño de negocios con rendimientos sustentables y crecientes para sus stakeholders. Este Programa es para ti si eres: Empresario de nivel medio y alto (preferiblemente). Emprendedor o consultor y estás interesado en convertirte en un facilitador o desempeñar un papel importante en la implementación de proyectos. Creador de nuevas unidades de negocio basadas en la innovación sustentable, o buscas incubar nuevos emprendimientos para resolver problemas de alto impacto ambiental en organizaciones, industrias, comunidades y/o ciudades. En este Programa aprenderás a: Promover una nueva cultura (un movimiento) para que empresarios, emprendedores, funcionarios públicos y académicos puedan romper los paradigmas clásicos del crecimiento, a través del conocimiento y la aplicación de cuatro principios básicos en el diseño de modelos de economía circular viables y competitivos: innovación disruptiva, visión sistémica del crecimiento, ecología industrial y economía circular.
+"""}
+
 DOCUMENT6 = {
-    "title": "Cocina2",
-    "content": """- Sirve tus bocadillos con estos increíbles bigotes. Contiene 18 piezas.
-
-- Deja que esta ballena nade alrededor de tu taza, introduce las hierbas aromáticas dentro de ella y sumérgela en tu taza con agua caliente para que disfrutes de un rico té.
-
-- Infusor de té con forma de tiburón, hecho de silicona, en color gris. Sus mandíbulas se sujetan de tu taza mientras su cola sostiene las hojas de tu bebida favorita.
-
-- Infusor de té con forma de tiburón, hecho de silicona, en color gris. Sus mandíbulas se sujetan de tu taza mientras su cola sostiene las hojas de tu bebida favorita. Dimensiones: 8 cm. x 9 cm. x 5 cm. aproximadamente.
-
-- Medidas: 7 x 2.5 x 13,2 cm. Compatible para grabado. Acero inoxidable.
-
-- Estos camaleones pegajosos te harán más fácil encontrar tu bebida. Hechos de silicona.
-
-- Disfruta tus cereales o comida favorita en este divertido plato que da la sensación de estar derramándose.
-
-- Cuchara/Tenedor con forma de Terodáctilo. Hecho de acero inoxidable, libre de BPA.
-
-- Si eres de esas personas para las que las cosas deben ser perfectas, entonces esta tabla de cortar es para ti. El Obsessive Chef es una tabla de cortar de 9 x 12 pulgadas hecha de bambú fuerte y sostenible, y claramente indica las medidas más precisas en detalle exacto. Así que no te preocupes... está bien exagerar un poco. Y si quieres lavarla veinte veces después de usarla, no diremos nada.
-
-- Tómate un descanso de tu caos diario, y deja que este caballito de mar vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
-- Table Saw es el accesorio perfecto para tu cocina, se puede utilizar para cortar lechuga hasta pasteles.
-
-- Con esta taza podrás empezar un gran día, ya que adornará tus manos cada vez que tomes de ella.
-
-- Tazas Pantone, hechas de porcelana china, disponibles en diferentes colores.
-
-- Los Tiny Prancers son llamas pequeñas pero poderosas que cuelgan del borde de tu bebida. Cada una tiene una combinación única para que no las confundas.
-
-- Este barquito se puede convertir en un juguete para antes de la cena. Incluye un plato, un plato hondo y un vaso.
-
-- Tómate un descanso de tu caos di
-
-ario, y deja que este caballito de mar vuelva ideal tu taza de té. Está hecho con silicona resistente al calor.
-
-- Tómate un descanso de tu caos diario, y deja que esta tortuga te vuelva ideal tu taza de té. Está hecho con silicona resistente al calor."""}
-DOCUMENT7 = {
-    "title": "Accesorios",
+    "title": " Economía círcular (EGADE)",
     "content": """
-    - Kidrobot y The Andy Warhol Foundation vuelven a juntarse para crear esta hermosa decoración POP para tu casa. The Andy Warhol x Kidrobot Resin Banana Bookends elevarán a otro nivel tus repisas. Miden 9.5” de altura. Están hechas de resina y se le puede quitar la piel al plátano para darle otro toque. ©/®/™ The Andy Warhol Foundation for the Visual Arts, Inc.
+Aplicar estos modelos para que empresas e instituciones puedan transformar problemas actuales -calentamiento global, acidificación de los océanos, destrucción de las zonas verdes, agua contaminada e insuficiente, migración, etc.- en planes de acción factibles, ejecutables y escalables para que la sustentabilidad se convierta en un “negocio” (business driven sustainability) de rendimientos sustentables crecientes, accesible y económicamente viable para todos sin excepción. Formular estrategias sustentables de negocios mediante economía circular. Emprender proyectos que permitan generar ventajas competitivas a una empresa, industria o ciudad. Plan de estudios del Programa Semana 0: Semana de orientación. Semana 5: Modelos de CBMs para convertir estrategias sustentables en negocios rentables. Semana 1: Una visión sistémica del crecimiento. Semana 6: Modelos de CBMs para desvincular el crecimiento económico del impacto ambiental. Semana 2: Un nuevo enfoque económico hacia una economía circular, regenerativa y sustentable. Semana 7: Formulación de estrategias sustentables de negocio mediante economía circular. Semana 3: El fin de los negocios usuales (BAU). El rol de la innovación disruptiva, sistémica y circular (DISC). Semana 8: Cómo emprender un proyecto para generar una ventaja competitiva circular para una empresa, industria o ciudad. Semana 4: Diseño de múltiples negocios de economía circular. Economía Circular de EGADE Business School forma parte del programa Empresas Conscientes. Si decides cursar y acreditas satisfactoriamente los otros dos cursos que lo integran -Liderazgo Sustentable y Finanzas para la Sustentabilidad-, podrás recibir el diploma correspondiente al programa Empresas Conscientes. DESCARGA EL FOLLETO Experiencia de aprendizaje Flexibilidad: 100% en línea. Videos de clase o explicativos y de invitados expertos en proyectos de innovación sustentable. Soporte técnico 24/7 a través de teléfono, chat y correo electrónico. 9 semanas de estudio (una semana de orientación y ocho semanas de contenido). Webinars semanales y de carácter magistral. Amplia variedad de medios y elementos interactivos. Profesor del Programa CARLOS SCHEEL Doctorado en Ingeniería (Ph.D.) en Optimal Control Systems, Universidad de Houston, EU. Maestría en Ingeniería - Computing, Control and Communications Engineering, Universidad de Michigan, EU. Profesor Emérito del Tecnológico de Monterrey, EGADE Business School, en las áreas de innovación tecnológica, economía circular, sistemas complejos y sistemas regionales de innovación sustentable; Scheel dirigió los programas de posgrado en Tecnologías Digitales, Electrónica y Telecomunicaciones en el Campus Monterrey. Su investigación se enfoca en las prácticas de responsabilidad social empresarial, en derechos humanos y empresas, la evaluación empírica de la efectividad de las prácticas y estrategias de responsabilidad social en comunidades de América Latina. Más información Rankings Internacionales Certificado Todos los participantes que concluyen satisfactoriamente el programa reciben un Certificado Digital Verificado de conclusión de estudios otorgado por EGADE Business School. DESCARGA EL FOLLETO * Algunas condiciones académicas y comerciales pueden modificarse sin previo aviso, mantente comunicado con tu asesor. Sujeto a disponibilidad de apertura de grupos. Preguntas frecuentes Sobre el programa Sobre la experiencia de aprendizaje Sobre tu certificación Sobre los requisitos técnicos Sobre el proceso de pago Sobre la política de reembolso APLICA AHORA Regístrate lo antes posible. El cupo es limitado. En colaboración con EMERITUS © EMERITUS Institute of Management Accesibilidad
+    """}
 
-- Babero con diseño de camisa de leñador. Incluye una mordedera en forma de serrucho. Libre de BPA.
-
-- Babero con diseño de camisa de marinero. Incluye una mordedera en forma de ancla. Libre de BPA.
-
-- Mientras buscas un regalo de bebé único para los nuevos padres, te topas con esta adorable alcancía con forma de globo y, de repente, vuelves a la habitación de tu infancia.
-
-Es el día en que su abuela le regaló su primera alcancía como regalo navideño, diciendo esas sabias palabras: "Un centavo ahorrado es un centavo ganado".
-
-Solo una conejita de cerámica ordinaria con orejas rosadas y una linda sonrisa, tu alcancía tenía el misterioso poder de hacer que cualquier día parezca mejor. Pero el orgullo que sentirías cada vez que arrojaste otro centavo o níquel en tu banco de monedas marcando la diferencia en ese entonces.
-
-Entonces, aunque este conejito de globo brillante es una alcancía más elegante y moderna, sabes que tiene el mismo objetivo simple: convertirse en un recuerdo feliz de la infancia para otra persona y una decoración que querrían tener cuando eran niños, adolescentes, e incluso como adulto.
-
-- Encuentra ahora estos diseños exclusivos de Rick & Morty en Rojo Bermelo. Unitalla. 5 Modelos diferentes.
-
-- 4 oz. Licorera dentro de un libro. Tiene espacio para escribir en el libro. Medidas: 10.5 cm (ancho) x 14.5 cm (alto) x 2.2 cm (profundidad).
-  
+DOCUMENT7 = {
+    "title": "Finanzas para la Sustentabilidad",
+    "content": """
+Si no quieres compartir tus datos de contacto, escríbenos a admisiones.latam@emeritus.org para facilitarte el folleto digital del programa. Política de privacidad COMIENZA EL 15 de julio del 2024 DURACIÓN 9 semanas 4-6 horas por semana COSTO US$1,595 y reciba un beneficio de US$160 por un recomendado Opciones de pagos flexibles disponibles PARA TU EQUIPO Inscribe a tu equipo y aprende con tus compañeros Aprende más ¿Por qué estudiar Finanzas para la Sustentabilidad? Frente al cambio, el líder debe entender que es factible concretar un negocio sostenible y con un fundamento financiero que beneficie a todos sus stakeholders. Debe comprender también que esta clase de iniciativas son ya una realidad que impacta la reputación y los indicadores financieros del negocio. Finanzas para la Sustentabilidad, de EGADE Business School -la escuela de posgrados en negocios del Tecnológico de Monterrey-, replantea las estrategias de negocio bajo la lente de un modelo sostenible y resiliente; te prepara para la toma de decisiones bajo criterios ASG-Ambiente, Sociedad y Gobernanza; e identifica los beneficios y los retos que enfrenta el modelo ASG. Highlights del programa Contenidos y entrevistas con expertos en el tema en LATAM Pone al día sobre riesgos y oportunidades financieras asociadas al cambio climático Desarrollo de un proyecto para aplicar tus nuevos conocimientos Este programa es para ti si eres: Empresario de alta dirección, gerente, directivo y tomador de decisiones de áreas funcionales interesado en profundizar en los criterios ASG y su relevancia. Colaborador en organizaciones nacionales e internacionales, que lidera o aspira a drigir modelos de negocio sostenibles. Un profesionista que busca profundizar en el conocimiento de los elementos que impactan la parte financiera del modelo ASG y su aplicación en la toma de decisiones de inversión y de financiamiento. Un visionario que busca comprender los elementos necesarios para desarrollar estrategias que incorporen los pilares o estándares ASG en su organización. El participante debe tener experiencia profesional en el área de negocios, en puestos directivos o gerenciales, y tener nociones de finanzas. En este programa aprenderás a: A identificar los elementos indispensables para incorporar los criterios ASG - Ambiente, Sociedad, Gobernanza - en la operación de tu organización o empresa. Las implicaciones y la relevancia que tiene hoy el modelo ASG. A tomar decisiones con base en los criterios ASG. A analizar la normativa y los indicadores cuantificables para estos temas. Cuáles son los riesgos y las oportunidades financieras que se asocian al cambio climático, así como los fundamentos del mercado de carbono y su funcionamiento. Los elementos que conforman el marco normativo del gobierno corporativo y cómo funciona cada uno de sus órganos. Plan de estudios Semana 0: Semana de Orientación Semana 5: La S de los aspectos sociales Semana 1: Finanzas Sostenibles Semana 6: La G de gobierno corporativo Semana 2: Modelo ASG-Ambiente, Sociedad y Gobernanza Semana 7: La G de gobierno corporativo: Tendencias Semana 3: La A de medio ambiente. Cambio climático e impactos Semana 8: Retos del modelo ASG Semana 4: La A de medio ambiente. Mercado de emisiones CO2 y economía circular DESCARGA EL FOLLETO Experiencia de aprendizaje 9 semanas de estudio (una semana de orientación y ocho semanas de contenido) Flexibilidad: 100% en línea Videos de clase o explicativos y de invitados expertos en proyectos de innovación sustentable Webinars semanales y de carácter magistral. Soporte técnico 24/7 a través de teléfono, chat y correo electrónico Amplia variedad de medios y elementos interactivos para mantener el curso dinámico y atractivo semana a semana Profesora YENNY NARANJO TUESTA Doctorado (Ph.D.) en Contabilidad y Finanzas Corporativas – Universitat de Valencia, España. Maestría en Administración con énfasis en Investigación – Universidad de Colombia. Profesora de tiempo completo en el Tecnológico de Monterrey, sede Monterrey – México, enseña en la Escuela de Negocios, en especial para el programa de Contaduría Pública y Finanzas. Los módulos a su cargo son: consultoría, gobierno corporativo, ESG y diagnóstico de riesgo. También coordina el bloque de Dirección Financiera y Contraloría Estratégica. Más información Rankings Internacionales Certificado Todos los participantes que concluyen satisfactoriamente el programa reciben un Certificado Digital Verificado de conclusión de estudios otorgado por EGADE Business School. DESCARGA EL FOLLETO * Algunas condiciones académicas y comerciales pueden modificarse sin previo aviso, mantente comunicado con tu asesor. Sujeto a disponibilidad de apertura de grupos. Preguntas frecuentes Sobre el programa Sobre la experiencia de aprendizaje Sobre tu Certificación Sobre los requisitos técnicos Sobre el proceso de pago Sobre la política de reembolso APLICA AHORA Regístrate lo antes posible. El cupo es limitado. Opciones de pagos flexibles disponibles. Conoce más. En colaboración con EMERITUS © EMERITUS Institute of Management Accesibilidad
     """}
 
 DOCUMENT8 = {
-    "title": "Accesorios",
-    "content": """ 
-    - Kidrobot presenta este pin coleccionable de los Simpsons, de 1.5 pulgadas.
-
-- Pon tus llaves en orden con este llavero en forma de diamante.
-
-- Lonchera con forma de Robot metálico.
-
-- Lonchera con forma de case de guitarra.
-
-- Babero con diseño de camisa de marinero. Incluye una mordedera en forma de ancla. Libre de BPA.
-
-- ¡Lleva un compañero de cupcakes a donde quiera que vayas! Llavero de esmalte de doble cara.
-
-- ¡Adjunta un unicornio a tus llaves y agrega instantáneamente un poco de magia a tus aventuras! Llavero de esmalte de doble cara.
-
-- ¡Adjunta galaxias de bondad a tus llaves! Siente tu polvo de estrellas brillar. Llavero de esmalte de doble cara.
-
-- Adecuado para bebés de 0 meses a 6 meses. El chupón está hecho de un material suave y flexible. Libre de BPA.
-
-- Cambia de color cuando se moja. El patrón blanco se cambia a diferentes colores cuando se moja. Mecanismo de alta calidad para abrir y sostener el paraguas. 100 cm de diámetro cuando está abierto. Se entrega a partir del 23 de septiembre.
-
-- Nuevos pines de Momiji disponibles.
-
-- Nuevos pines de Momiji disponibles.
-
-- Colecciónalos todos! Homer Simpson Enamel Pin – 2/20, Marge Simpson Enamel Pin – 2/20, Bart Simpson Enamel Pin – 3/20, Lisa Simpson Enamel Pin – 1/20, Maggie Simpson Enamel Pin – 1/20, Scratchy Enamel Pin – 1/20, Itchy Enamel Pin – 1/20, Duffman Enamel Pin – 2/20, Barney Enamel Pin – 1/20, Funzo Enamel Pin – 1/40, Snake Enamel Pin – 3/40, Apu Enamel Pin – 2/20, Devil Flanders Enamel Pin – 1/40.
-
-- Stashed son perfectos para guardar tus cosas de una manera genial. Contiene 3 piezas. 
+    "title": "Estrategia de Negocio: de la tecnología a la Inteligencia Artificial",
+    "content": """
+Estrategia de Negocio: de la tecnología a la Inteligencia Artificial Programa Ejecutivo Si no quieres compartir tus datos de contacto, escríbenos a admisiones.senior@emeritus.org para facilitarte el folleto digital del programa. Política de privacidad COMIENZA EL TBD DURACIÓN 6 meses, online 4 a 6 horas por semana COSTO Precio especial para grupos Prepárate para un cambio cultural donde la innovación y la transformación digital van mucho más allá de la mera selección e implementación de nuevas herramientas tecnológicas en un contexto de IA. Este Programa Ejecutivo en Estrategia de Negocio: de la tecnología a la Inteligencia Artificial de EGADE Business School brinda una guía completa sobre cómo la innovación tecnológica -y específicamente la IA- están cambiando las dinámicas empresariales, transformando la interacción con el cliente, y redefiniendo la forma en que los negocios compiten en el mercado. Para alcanzar sus objetivos, este Programa busca formar líderes que entiendan e integren la innovación tecnológica, impulsen el desarrollo de habilidades entre sus colaboradores y promuevan la contratación de profesionales especializados o la externalización de servicios específicos. Este programa profundiza en los aspectos clave a considerar para emprender con éxito una innovación o transformación digital efectiva y sostenible. Lo que implica: Conocer los beneficios de las nuevas tecnologías en la era de la IA. Comprender en profundidad la estrategia de negocio. Ejercer un liderazgo estratégico. Alinear la cultura organizacional. Más del 70% de las iniciativas de transformación digital fracasan*, probablemente porque se orientan a la tecnología, en lugar de optar por un modelo estratégico que considere y se adapte al contexto del negocio, integrando la innovación en el contexto de la Inteligencia Artificial.** *La transformación digital en la agenda del CEO | McKinsey. **Revista Gerencia - Las cinco causas del fracaso de la transformación digital en las empresas (emb.cl). Highlights del Programa Elementos clave para el diseño de estrategias digitales en la era de la AI. Entrevistas exclusivas con líderes de la industria para conocer y profundizar en las mejores prácticas. Análisis de casos, ejemplos prácticos y desarrollo de un proyecto personal aplicable de inmediato en tu organización. Este Programa es para ti si eres: Directivo, gerente, empresario o un ejecutivo que toma decisiones y estás interesado en optimizar la competitividad de tu organización mediante estrategias que impulsen la innovación o la transformación digital del negocio. Un profesional visionario, líder de transformación digital o aspirante a esa posición, que busca construir negocios sostenibles a través de una sólida estrategia digital. Requisitos: Contar con al menos 5 años de experiencia en roles que impliquen la toma constante de decisiones. Ocupar o tener experiencia en puestos directivos en áreas funcionales o que reporten a la dirección general, sean claves o partícipes directos en el proceso de innovación o transformación digital de la empresa. Ser un colaborador clave que sume al proceso de innovación y transformación digital. Tener experiencia en negocios. Estructura del Programa Plan de estudios Integrado por 3 cursos centrales más una semana de orientación al programa. Semana de orientación Curso 1 Curso 2 Curso 3 Este programa también comprende: 3 días de jornadas presenciales. Actividades de networking* (online y presencial en campus). Evento de graduación. *Las actividades de networking pueden cambiar por razones académicas. DESCARGA EL FOLLETO Al cursar este Programa Ejecutivo: Comprenderás la importancia de definir la estrategia de negocio como punto de partida para diseñar una estrategia digital que permita generar valor para la empresa en la era de la IA y de las nuevas tecnologías. Manejarás los elementos para diseñar una estrategia de transformación dual (buscando eficiencias operativas y generando nuevos ingresos) para acelerar la marcha del negocio. Entenderás la influencia e importancia de la cultura organizacional para impulsar la innovación/transformación digital y lograr un beneficio real para el negocio. Reconocerás las cualidades del liderazgo efectivo, desarrollar una mentalidad ágil y la capacidad para adaptarse al cambio. Este Programa Ejecutivo, de EGADE Business School, te brinda conocimientos y herramientas para que estructures un proyecto aplicable de inmediato en tu organización. Equipo de profesores RAÚL MONTALVO Doctor en Economía, Universidad de Essex, Inglaterra y Maestría en Economía, Centro de Investigación y Docencia Económica A.C. (CIDE), México. Director de sede Guadalajara, EGADE Business School El profesor Montalvo tiene estudios de estancia corta en Economía Geográfica y Generaciones Traslapadas en la Universidade Técnica de Lisboa; Negocios y Mercado Chino en Fudan University y Peking University; Visualización de Datos en Stevens Institute of Technology y Emprendimiento en Babson College; Customer Analytics en Wharton. También cuenta con una certificación en Data Science por Skill Academy de IBM y un certificado bridge-post doctoral en Business Analytics de la University of Texas. Más información slide-faculty-member-3111 slide-faculty-member-3112 slide-faculty-member-3115 Rankings Internacionales de EGADE Business School Certificado Todos los participantes que concluyen satisfactoriamente el Programa Ejecutivo en Estrategia de Negocio: de la tecnología a la Inteligencia Artificial reciben un Certificado Digital Verificado de conclusión de estudios, otorgado por EGADE Business School, la escuela de negocios #1 en América Latina. DESCARGA EL FOLLETO *Algunas condiciones académicas y comerciales pueden modificarse sin previo aviso, mantente comunicado con tu asesor. Sujeto a disponibilidad de apertura de grupos. APLICA AHORA Regístrate lo antes posible. El cupo es limitado. En colaboración con EMERITUS © EMERITUS Institute of Management Accesibilidad
     """}
 
 DOCUMENT9 = {
-    "title": "Saludo",
+    "title": "Liderazgo estratégico en el contexto de la IA",
     "content": """
-    Biemvenido a Rojo Bermelo. Soy un asistente virtual y estoy encantando de poder ayudarte, tenemos una gran varidad de Art Toys, Artículos para Cocina y Accesorios
+Liderazgo estratégico en el contexto de la IA Si no quieres compartir tus datos de contacto, escríbenos a admisiones.latam@emeritus.org para facilitarte el folleto digital del programa. Política de privacidad COMIENZA EL TBD DURACIÓN 8 semanas 6 - 8 horas de estudio por semana COSTO y reciba un beneficio de US$160 por un recomendado PARA TU EQUIPO Inscribe a tu equipo y aprende con tus compañeros Aprende más Construye un liderazgo transformador Aún hay quienes creen que la tecnología es el principio, el medio y el fin de la transformación digital. Nada más equivocado. La transformación digital depende de la participación activa de las personas. Y la generación de esta cultura empresarial demanda un liderazgo efectivo. Este programa de EGADE Business School está diseñado para que desarrolles habilidades de liderazgo para conducir a tu negocio al éxito en los tiempos de la Inteligencia Artificial. Descubre nuevas formas de acercarte a los clientes y al mercado y garantiza una transformación digital centrada en la generación de resultados tangibles. Resultados de aprendizaje Integra la transformación digital a tu estrategia y ADN empresarial y elige las tecnologías adecuadas para tu negocio. Facilita la adopción de nuevas formas de operación y el desarrollo de productos y servicios innovadores. Desarrolla un proyecto personal para aplicar los conocimientos y habilidades adquiridos a tu empresa. “Del 90% de las empresas que pusieron en marcha programas de costos tecnológicos en los últimos años, tres de cada cuatro no alcanzaron sus objetivos”. Programa diseñado para: Líderes empresariales y tomadores de decisiones funcionales que ocupan posiciones de liderazgo. Empresarios que poseen, operan o dirigen sus propios negocios,, son socios en una empresa, o lideran organizaciones pequeñas y medianas. Líderes de transformación digital o aspirantes a esa posición, con experiencia en áreas relacionadas con la transformación digital. Profesionales que desean actualizarse en temas de importancia vital para sus organizaciones. Plan de estudios Semana 0: Orientación Módulo 1: Definiendo el Negocio: Forjando el Rumbo de la estrategia Módulo 2. Liderazgo Disruptivo: de la Visión a la Acción Módulo 3. Transformando el Negocio y Añadiendo Valor en la Era de la IA Módulo 4. Perspectivas de Negocio: con Tecnología y Estrategia Módulo 5. Analizando el Contexto: Retos y Oportunidades en la Era de la IA Módulo 6. Redefiniendo el Liderazgo en la Era de la  IA Módulo 7. Un Modelo de Negocio Exitoso: ¿Liderando, Gestionando y Colaborando? DESCARGA EL FOLLETO Experiencia de aprendizaje Contenidos en español Videos de clase grabados Sesiones Live con el profesor Asesoría académica de un tutor Proyecto integrador Casos de estudio Actividades y contenidos interactivos Soporte técnico 24/7 Profesor RAÚL MONTALVO Profesor responsable del Programa Doctor en Economía | University of Essex, Inglaterra Maestría en Economía | Centro de Investigación y Docencia Económicas, A.C. (CIDE), México Director de sede Guadalajara | EGADE Business School Rankings Internacionales Certificado Todos los participantes que concluyen satisfactoriamente el programa reciben un Certificado Digital Verificado de conclusión de estudios otorgado por EGADE Business School. DESCARGA EL FOLLETO * Algunas condiciones académicas y comerciales pueden modificarse sin previo aviso, mantente comunicado con tu asesor. zbr>>br> * Sujeto a disponibilidad de apertura de grupos. Preguntas frecuentes Sobre el programa Sobre la experiencia de aprendizaje Sobre tu Certificación Sobre los requisitos técnicos Sobre el proceso de pago Sobre la política de reembolso Sobre el programa Sobre la experiencia de aprendizaje Sobre tu certificación Sobre los requisitos técnicos Sobre el proceso de pago Sobre la política de reembolso APLICA AHORA Regístrate lo antes posible. El cupo es limitado. En colaboración con EMERITUS © EMERITUS Institute of Management Accesibilidad
     """}
 
 DOCUMENT10 = {
-    "title": "Información de Contacto",
+    "title": "Sociedad 5.0: Organizaciones en el contexto de la IA",
     "content": """
-    No contamos con tienda física. Si tienes dudas, no dudes en contactarnos al Teléfono: 55 6586 6307. Correo electrónico: hola@rojobermelo.mx
+Sociedad 5.0: Organizaciones en el contexto de la IA Si no quieres compartir tus datos de contacto, escríbenos a admisiones.latam@emeritus.org para facilitarte el folleto digital del programa. Política de privacidad COMIENZA EL TBD DURACIÓN 8 semanas 4-6 horas de estudio por semana COSTO y reciba un beneficio de US$160 por un recomendado PARA TU EQUIPO Inscribe a tu equipo y aprende con tus compañeros Aprende más Explota el potencial de la Inteligencia Artificial para la innovación y la mejora de procesos organizacionales. LA REINVENCIÓN EMPIEZA POR LA CULTURA. La transformación digital va más allá de lo técnico, implica un cambio profundo en la cultura de la empresa. Este programa aborda aplicaciones prácticas de IA en diferentes sectores industriales y de capacitación de personal; así como consideraciones de gobernanza, éticas y de privacidad. Define un plan integral y una estrategia de cultura digital sostenible y alineada con los objetivos del negocio. Aprende cómo en este programa en línea de 8 semanas de EGADE Business School. Resultados de aprendizaje Desarrolla el talento y la cultura para capitalizar herramientas de IA. Alinea innovación, objetivos financieros y estructura de capital. Lidera innovaciones que respondan a las expectativas de la empresa. El gran desafío para implementar las nuevas tecnologías no es sólo técnico, implica la participación activa de las personas. Programa diseñado para: Líderes empresariales en niveles altos y medios- a cargo de proyectos de innovación y transformación digital. Gerentes de proyectos de innovación, que lideran iniciativas digitales y buscan elevar la efectividad de sus proyectos. Profesionales de recursos humanos y desarrollo organizacional responsables de cultivar y fortalecer la cultura organizacional. Ejecutivos de tecnología y transformación digital cuya misión es impulsar la adopción de tecnologías emergentes. Empresarios que poseen, operan o dirigen sus propios negocios y están interesados en afrontar desafíos en entornos digitalizados y automatizados. Consultores y asesores empresariales que brindan servicios a empresas en proceso de transformación digital. Profesionales interesados en comprender el papel de la cultura organizacional y en aprender a gestionar el cambio para liderar la transformación digital. Plan de estudios Semana 0: Orientación Módulo 1: La Nueva Identidad / Digital Readiness Módulo 2: Importancia de la Cultura Organizacional para un Cambio Exitoso Módulo 3: Cultura Digital en la Era de la IA Módulo 4: Agile Mindset / Gestión del Cambio Módulo 5: Democratizar la Información para la Toma de Decisiones / From Hierarchies to Networks (Agile Collaborations) Módulo 6: La Nueva Forma de Trabajar en la Era de la IA Módulo 7: Creación de Valor y Medición de la Estrategia de Cambio DESCARGA EL FOLLETO Experiencia de aprendizaje 100% en línea y en español Contenidos actualizados en metodologías empresariales Siete Sesiones Live con el profesor Sesiones Live con especialistas en IA aplicada a negocios Entrevistas con líderes de la industria Casos de estudio Actividades y contenidos interactivos Soporte técnico 24/7 Foros de discusión Proyecto integrador Soporte técnico 24/7 Profesor JUAN ENCISO Profesor responsable del Programa Doctor en Economía | University of Essex, Inglaterra Maestría en Economía | Centro de Investigación y Docencia Económicas, A.C. (CIDE), México Director de sede Guadalajara | EGADE Business SchoolaDoctorado en Política Pública | Tecnológico de Monterrey, México Maestría en Negocios Internacionales para Latinoamérica |Tecnológico de Monterrey & Thunderbird School of Global Management, Estados Unidos Maestría en Administración | Tecnológico de Monterrey Rankings Internacionales Certificado Todos los participantes que concluyen satisfactoriamente el programa reciben un Certificado Digital Verificado de conclusión de estudios otorgado por EGADE Business School. DESCARGA EL FOLLETO * Algunas condiciones académicas y comerciales pueden modificarse sin previo aviso, mantente comunicado con tu asesor. Sujeto a disponibilidad de apertura de grupos. Preguntas frecuentes Sobre el programa Sobre la experiencia de aprendizaje Sobre tu Certificación Sobre los requisitos técnicos Sobre el proceso de pago Sobre la política de reembolso Sobre el programa Sobre la experiencia de aprendizaje Sobre tu certificación Sobre los requisitos técnicos Sobre el proceso de pago Sobre la política de reembolso APLICA AHORA Regístrate lo antes posible. El cupo es limitado. En colaboración con EMERITUS © EMERITUS Institute of Management Accesibilidad\n
     """}
-
 DOCUMENT10 = {
-    "title": "Información de la tienda Rojo Bermelo",
+    "title": "¿Quiénes somos?",
     "content": """
-    No contamos con tienda física. Si tienes dudas, no dudes en contactarnos al Teléfono: 55 6586 6307. Correo electrónico: hola@rojobermelo.mx
+Emeritus, parte del grupo Eruditus, se asocia con universidades de primer nivel en los Estados Unidos, Europa, América Latina, India y China para llevar la educación empresarial y profesional de clase mundial a una audiencia global.
+Emeritus se ha asociado con más de 54 universidades con 270 programas educativos hasta la fecha, incluidas MIT, Columbia, Harvard, Cambridge, INSEAD, Wharton, UC Berkeley, INCAE, IIT, IIM, NUS y HKUST, lanzando más de 100 cursos y atendiendo a estudiantes de más de 80 países. Muchos cursos se ofrecen en varios idiomas, incluidos español, portugués y mandarín.
+Con oficinas en seis países, más de 1400 empleados y más de 50.000 estudiantes matriculados en los últimos 12 meses, Emeritus es líder mundial en el mercado global de educación profesional con un negocio de 280.000 millones de dólares.
     """}
 
-documents = [DOCUMENT1, DOCUMENT2, DOCUMENT3,DOCUMENT4,DOCUMENT5,DOCUMENT6,DOCUMENT7,DOCUMENT8,DOCUMENT9,DOCUMENT10]
+documents = [DOCUMENT0, DOCUMENT2, DOCUMENT3, DOCUMENT4, DOCUMENT5, DOCUMENT6, DOCUMENT7, DOCUMENT8, DOCUMENT9, DOCUMENT10]

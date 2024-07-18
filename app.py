@@ -9,7 +9,6 @@ import numpy as np
 from IPython.display import display
 from IPython.display import Markdown
 import textwrap
-import markdown
 from markupsafe import Markup
 import re
 import markdown2
@@ -56,7 +55,7 @@ if not os.path.exists(AUDIO_FOLDER):
     os.makedirs(AUDIO_FOLDER)
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key='AIzaSyB4hQU2bxTC80L4sYPG4_OgvItdTqUwTl0')
+genai.configure(api_key='AQUI_VA_TU_API_KEY')
 
 def format_response(text):
     # Convertir Markdown a HTML
@@ -138,14 +137,6 @@ def home():
 
     elif request.method == 'POST':
         question = request.form['question'].lower()
-
-        # Verificar si la pregunta contiene las palabras clave
-        if 'marketing' in question or 'administración de empresas' in question or 'salud' in question or 'ciencia de datos' in question or 'programación' in question or 'diseño de productos' in question or 'emprendimiento' in question or 'innovación' in question or 'Recursos Humanos' in question or 'project management' in question or 'ventas y marketing' in question or 'recursos humanos' in question:
-            response_message = "😅 Lo siento solo estoy entrenado para que en este ejercicio te comparta el portafolio con EGADE Business School pero si deseas conocer más de nuestro portafolio completo te invito a conocer nuestro sitio Web: <a href='https://www.emeritus.org' target='_blank'>www.emeritus.org</a>"
-            session['conversation_history'] = update_conversation_history(
-                session['conversation_history'], question, response_message)
-            session.modified = True
-            return jsonify({'response': [Markup(response_message)]})
 
         # Si no contiene las palabras clave, continuar con el procesamiento normal
         df = pd.DataFrame(documents)

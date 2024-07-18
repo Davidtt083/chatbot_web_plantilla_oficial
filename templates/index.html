@@ -12,25 +12,29 @@
   <title>CHAT GPT python</title>
 
   <style>
-    /* Estilo para el mensaje del sistema */
+    .img-fluid {
+      max-width: 109px;
+      height: auto;
+      margin-top: 7px;
+      margin-left: 13px;
+    }
+
     .system-message {
-      background-color: #007bff;
-      /* Fondo azul */
+      background-color: #00be6d;
       color: white;
-      /* Texto blanco */
       border-radius: 10px;
       padding: 10px;
       margin-bottom: 10px;
     }
 
-    /* Estilo para el mensaje del usuario */
     .user-message {
-      background-color: #fdfdfd;
-      /* Fondo gris */
+      background-color: #ffffff;
+      color: #000000;
       border-radius: 10px;
       padding: 10px;
       margin-bottom: 10px;
       text-align: right;
+      border: solid 2px #00be6d;
     }
 
     #loading-indicator {
@@ -40,24 +44,101 @@
     }
 
     .btn {
-      width: 6%;
+      width: 11%;
+      background-color: black;
     }
 
     .formu-entra {
       width: 94%;
+      min-height: 38px;
+      max-height: 200px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    #questionDiv {
+      outline: none;
     }
 
     .conte-formu {
       width: 100%;
       padding: 0;
+      margin-top: 10px;
     }
 
     body {
-      background-color: #172736;
+      background-color: #000000;
     }
 
     .texto {
-      background-color: rgb(7 7 87 / 68%);
+      background-color: rgba(255, 255, 255, 0.68);
+    }
+
+    #questionDiv[contenteditable=true]:empty:before {
+      content: attr(data-placeholder);
+      color: #6c757d;
+      /* Color gris para el placeholder */
+      font-style: italic;
+    }
+
+    .privacy-message {
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+      opacity: 0.7;
+    }
+
+    .privacy-message h4 {
+      color: #495057;
+      margin-top: 0;
+    }
+
+    .privacy-message p {
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+
+    .feedback-buttons {
+      margin-top: 10px;
+      background: #ffffff;
+      border-radius: 5px;
+      width: 78px;
+    }
+
+    .feedback-buttons button {
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+
+    .feedback-buttons button:hover {
+      opacity: 1;
+    }
+
+    .feedback-buttons button.active {
+      opacity: 1;
+    }
+
+    .single-list {
+      display: inline-block;
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    .single-list li {
+      list-style-type: none;
+      margin-bottom: 5px;
+    }
+
+    .single-list li:before {
+      content: "•";
+      margin-right: 5px;
     }
   </style>
 </head>
@@ -71,13 +152,29 @@
         <div class="container mt-5">
           <div class="row">
             <div id="chat">
+              <div class="privacy-message">
+                <h4>Aviso de Privacidad</h4>
+                <p>Conservo un registro de esta conversación para poder seguir mejorando la
+                  experiencia del cliente. Por favor, no proporciones ninguna información personal que no sea
+                  directamente relevante para tu consulta.</p>
+              </div>
 
               {% for conversation in conversations %}
+              {% if conversation['user'] %}
               <div class="user-message">{{ conversation['user'] }}</div>
+              {% endif %}
               {% for line in conversation['bot'] %}
-              <div class="system-message">{{ line| safe }}</div>
+              <div class="system-message">
+                {{ line| safe }}
+              </div>
               {% endfor %}
+              <div class="feedback-buttons">
+                <button class="like-btn" onclick="giveFeedback(this, 'like')"><i
+                    class="fa-regular fa-thumbs-up"></i></button>
+                <button class="dislike-btn" onclick="giveFeedback(this, 'dislike')">👎</button>
+              </div>
               {% endfor %}
+
 
               <div id="loading-indicator"></div>
             </div>
@@ -129,17 +226,19 @@
         const chatContainer = document.getElementById('chat');
         const loadingIndicator = document.getElementById('loading-indicator');
 
-        // Eliminar el elemento loading-indicator
         if (loadingIndicator) {
           loadingIndicator.remove();
         }
 
-        response.forEach(line => {
-          const systemMessage = document.createElement('div');
-          systemMessage.className = 'system-message';
-          systemMessage.innerHTML = line;
-          chatContainer.appendChild(systemMessage);
-        });
+        const systemMessage = document.createElement('div');
+        systemMessage.className = 'system-message';
+
+        // Unir todas las líneas de respuesta en un solo elemento HTML
+        systemMessage.innerHTML = response.join('');
+
+        addFeedbackButtons(systemMessage);
+        chatContainer.appendChild(systemMessage);
+
         scrollToBottom();
         const botAudio = document.getElementById('bot-audio');
         botAudio.src = audioFile;
@@ -188,6 +287,43 @@
           questionInput.value = '';
         }
       });
+
+      const chatContainer = document.getElementById('chat');
+      const privacyMessage = chatContainer.querySelector('.privacy-message');
+
+      if (privacyMessage && chatContainer.children.length <= 2) {
+        const welcomeMessage = document.createElement('div');
+        welcomeMessage.className = 'system-message';
+        welcomeMessage.textContent = 'Hola, soy el asistente virtual de Emeritus Latam. Estoy aquí para acompañarte en este ejercicio académico. Puedes preguntarme sobre quiénes somos, cuál es nuestro portafolio con EGADE Business School, ¿En qué puedo ayudarte hoy? 😊';
+
+        privacyMessage.insertAdjacentElement('afterend', welcomeMessage);
+      }
+
+      window.giveFeedback = function (button, type) {
+        const messageElement = button.closest('.system-message');
+        const likeBtn = messageElement.querySelector('.like-btn');
+        const dislikeBtn = messageElement.querySelector('.dislike-btn');
+
+        if (type === 'like') {
+          likeBtn.classList.toggle('active');
+          dislikeBtn.classList.remove('active');
+        } else {
+          dislikeBtn.classList.toggle('active');
+          likeBtn.classList.remove('active');
+        }
+
+        console.log(`Feedback ${type} dado para el mensaje: "${messageElement.textContent}"`);
+      }
+
+      function addFeedbackButtons(messageElement) {
+        const feedbackButtons = document.createElement('div');
+        feedbackButtons.className = 'feedback-buttons';
+        feedbackButtons.innerHTML = `
+      <button class="like-btn" onclick="giveFeedback(this, 'like')"><i class="fa-regular fa-thumbs-up"></i></button>
+      <button class="dislike-btn" onclick="giveFeedback(this, 'dislike')"><i class="fa-regular fa-thumbs-down"></i></button>
+    `;
+        messageElement.appendChild(feedbackButtons);
+      }
     });
   </script>
 

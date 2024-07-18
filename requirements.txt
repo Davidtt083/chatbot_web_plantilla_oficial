@@ -1,7 +1,7 @@
-
-Flask==3.0.2
-google-generativeai==0.7.0
-googleapis-common-protos==1.63.0
-markdown2==2.5.0
-numpy==1.26.4
-pandas==2.2.1
+pip install IPython
+pip install Flask
+pip install google-generativeai
+pip install googleapis-common-protos
+pip install markdown2
+pip install numpy
+pip install pandas
